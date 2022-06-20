@@ -47,6 +47,10 @@ export default function Index() {
                   borderColor: "text.tertiary",
                   backgroundColor: "transparent",
                 },
+                "&:active": {
+                  borderLeft: 0,
+                  backgroundColor: "transparent",
+                },
               }}
               component={Link}
               variant="menu"

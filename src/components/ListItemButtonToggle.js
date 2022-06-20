@@ -24,6 +24,7 @@ const ListItemButtonToggle = ({ children, title, sx = [] }) => {
             paddingLeft: 0,
             paddingRight: 0,
             borderBottom: open ? 1 : 0,
+            transition: "border 0.05s",
             borderColor: "divider",
           },
           ...(Array.isArray(sx) ? sx : [sx]),
@@ -36,11 +37,11 @@ const ListItemButtonToggle = ({ children, title, sx = [] }) => {
         <KeyboardArrowDown
           sx={{
             transform: open ? "rotate(-180deg)" : "rotate(0)",
-            transition: "0.2s",
+            transition: "0.15s",
           }}
         />
       </ListItemButton>
-      {open && children}
+      {open && <Box>{children}</Box>}
     </Box>
   );
 };

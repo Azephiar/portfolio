@@ -77,10 +77,6 @@ export const themeOptions = {
     },
   },
 
-  shape: {
-    borderRadius: 4,
-  },
-
   spacing: 5,
 };
 

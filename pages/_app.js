@@ -11,7 +11,7 @@ import { Twitter, GitHub, LinkedIn, ArrowBack } from "@mui/icons-material";
 import Link from "../src/components/Link";
 import { useRouter } from "next/router";
 import { menu } from "../src/constants";
-import { useEffect, useState } from "react";
+
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
@@ -21,7 +21,7 @@ export default function MyApp(props) {
 
   let path = router.pathname;
   let sanitizedPath = path.substring(1);
-  console.log("path", path.substring(0));
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>

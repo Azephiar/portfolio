@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import Awaked from "../src/components/portfolio/awaked";
 import TheEthGame from "../src/components/portfolio/TheEthGame";
 import CryptoLeaders from "../src/components/portfolio/CryptoLeaders";

@@ -28,7 +28,7 @@ export const menu = {
     index: "1.3",
     width: {
       xs: "90%",
-      md: "50%",
+      md: "650px",
     },
   },
 };

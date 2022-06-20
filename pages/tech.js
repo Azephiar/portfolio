@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import ListItemButtonToggle from "../src/components/ListItemButtonToggle";
 import TechSkill from "../src/components/TechSkill";
 import { useTheme } from "@emotion/react";

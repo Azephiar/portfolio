@@ -1,16 +1,9 @@
-import { Link, Typography } from "@mui/material";
-import { useTheme } from "@emotion/react";
+import { Link } from "@mui/material";
 import { Launch } from "@mui/icons-material";
-import { fontWeight } from "@mui/system";
+
 const LinkWithIcon = ({ href, children, display, fontSize, fontWeight }) => {
   return (
-    <Link
-      href={href}
-      display={display}
-      fontSize={fontSize ? fontSize : 15}
-      fontWeight={fontWeight}
-      target="_blank"
-    >
+    <Link href={href} display={display} fontSize={fontSize ? fontSize : 15} fontWeight={fontWeight} target="_blank">
       {children}
       <Launch
         sx={{
