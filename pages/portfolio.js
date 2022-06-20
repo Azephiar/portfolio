@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Awaked from "../src/components/portfolio/awaked";
+import Awaked from "../src/components/portfolio/Awaked";
 import TheEthGame from "../src/components/portfolio/TheEthGame";
 import CryptoLeaders from "../src/components/portfolio/CryptoLeaders";
 import ListItemButtonToggle from "../src/components/ListItemButtonToggle";
