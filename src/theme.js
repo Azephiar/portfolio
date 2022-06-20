@@ -2,27 +2,15 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 export const themeOptions = {
   palette: {
-    type: "dark",
+    type: "light",
 
     primary: {
       main: "#131313",
     },
 
-    secondary: {
-      main: "#a6bfa7",
-    },
-
-    expert: {
-      main: "#a6bfa7",
-    },
-
-    intermediate: {
-      main: "#bfb1a6",
-    },
-
-    beginner: {
-      main: "#bfa8a6",
-    },
+    beginner: { main: "#FFB7B2" },
+    intermediate: { main: "#FFDAC1" },
+    expert: { main: "#B5EAD7" },
 
     background: {
       default: "##FEFDFB",
@@ -30,27 +18,14 @@ export const themeOptions = {
       tertiary: "#E7E3DC",
     },
 
-    error: {
-      main: "#f44335",
-    },
-    warning: {
-      main: "#ff9801",
-    },
-    info: {
-      main: "rgba(154,154,154,1)",
-    },
-    success: {
-      main: "#4caf51",
-    },
-
-    divider: "rgba(154,154,154,1)",
+    divider: "#E7E3DC",
 
     text: {
       primary: "#131313",
       secondary: "#1D1D1D",
       tertiary: "#282828",
-      disabled: "rgba(255, 255, 255, 0.5)",
-      hint: "gba(255, 255, 255, 0.5)",
+      disabled: "#13131340",
+      hint: "#e08a44",
     },
   },
   typography: {
@@ -60,7 +35,6 @@ export const themeOptions = {
       fontSize: 25,
       fontWeight: 600,
       display: "inline",
-      marginBottom: "15px",
     },
   },
 

@@ -11,6 +11,7 @@ import { Twitter, GitHub, LinkedIn, ArrowBack } from "@mui/icons-material";
 import Link from "../src/components/Link";
 import { useRouter } from "next/router";
 import { menu } from "../src/constants";
+import { useEffect, useState } from "react";
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
@@ -47,7 +48,7 @@ export default function MyApp(props) {
           <Box
             sx={{
               height: "1px",
-              backgroundColor: "background.tertiary",
+              backgroundColor: "divider",
             }}
           />
 

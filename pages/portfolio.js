@@ -1,9 +1,10 @@
-import { Container, Typography, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import Awaked from "../src/components/portfolio/awaked";
 import TheEthGame from "../src/components/portfolio/TheEthGame";
 import CryptoLeaders from "../src/components/portfolio/CryptoLeaders";
 import ListItemButtonToggle from "../src/components/ListItemButtonToggle";
 import { useTheme } from "@emotion/react";
+import RouteTitle from "../src/components/RouteTitle";
 const projects = [
   {
     name: "AWAKED",
@@ -21,9 +22,10 @@ const projects = [
 
 export default function Portfolio() {
   const theme = useTheme();
+
   return (
-    <Container sx={{ marginBottom: theme.spacing(6) }}>
-      <Typography variant="title">PORTFOLIO</Typography>
+    <Box sx={{ marginBottom: theme.spacing(6) }}>
+      <RouteTitle />
       {projects.map((project, index) => {
         return (
           <ListItemButtonToggle title={project.name} key={"project-" + index}>
@@ -31,6 +33,6 @@ export default function Portfolio() {
           </ListItemButtonToggle>
         );
       })}
-    </Container>
+    </Box>
   );
 }

@@ -2,6 +2,7 @@ import { ListItemButton } from "@mui/material";
 import { KeyboardArrowDown } from "@mui/icons-material";
 import { useState } from "react";
 import { useTheme } from "@emotion/react";
+import { Box } from "@mui/material";
 const ListItemButtonToggle = ({ children, title, sx = [] }) => {
   const theme = useTheme();
   const [open, setOpen] = useState(true);
@@ -11,7 +12,7 @@ const ListItemButtonToggle = ({ children, title, sx = [] }) => {
   };
 
   return (
-    <>
+    <Box sx={{ marginBottom: theme.spacing(5) }}>
       <ListItemButton
         sx={[
           {
@@ -19,12 +20,11 @@ const ListItemButtonToggle = ({ children, title, sx = [] }) => {
             fontWeight: "900",
             textDecoration: "none",
             marginBottom: theme.spacing(2),
-            marginTop: theme.spacing(3),
             color: "text.primary",
             paddingLeft: 0,
             paddingRight: 0,
             borderBottom: open ? 1 : 0,
-            borderColor: "background.tertiary",
+            borderColor: "divider",
           },
           ...(Array.isArray(sx) ? sx : [sx]),
         ]}
@@ -41,7 +41,7 @@ const ListItemButtonToggle = ({ children, title, sx = [] }) => {
         />
       </ListItemButton>
       {open && children}
-    </>
+    </Box>
   );
 };
 
