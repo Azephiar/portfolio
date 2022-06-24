@@ -26,6 +26,7 @@ export default function MyApp(props) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title>Azephiar</title>
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
