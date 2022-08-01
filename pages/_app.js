@@ -40,8 +40,11 @@ export default function MyApp(props) {
             transition: "width 0.1s",
           }}
         >
-          <Box>
-            <Typography align="right" fontWeight={400} fontSize={12}>
+          <Box display="flex" justifyContent="space-between">
+            <Typography fontWeight={400} fontSize={12}>
+              🕑 GMT+2 / EUROPE
+            </Typography>
+            <Typography fontWeight={400} fontSize={12}>
               AZEPHIAR.ETH@GMAIL.COM
             </Typography>
           </Box>
@@ -75,7 +78,7 @@ export default function MyApp(props) {
                 <IconButton href="https://github.com/Azephiar" target="_blank">
                   <GitHub
                     sx={{
-                      fontSize: 30,
+                      fontSize: { xs: 25, md: 30 },
                       marginRight: theme.spacing(1),
                       color: "text.tertiary",
                     }}
@@ -84,7 +87,7 @@ export default function MyApp(props) {
                 <IconButton href="https://www.linkedin.com/in/ezechiele-tosadori-6883b615a/" target="_blank">
                   <LinkedIn
                     sx={{
-                      fontSize: 30,
+                      fontSize: { xs: 25, md: 30 },
                       marginRight: theme.spacing(1),
                       color: "text.tertiary",
                     }}
@@ -93,7 +96,7 @@ export default function MyApp(props) {
                 <IconButton href="https://twitter.com/Azephiar" target="_blank">
                   <Twitter
                     sx={{
-                      fontSize: 30,
+                      fontSize: { xs: 25, md: 30 },
                       color: "text.tertiary",
                     }}
                   />
